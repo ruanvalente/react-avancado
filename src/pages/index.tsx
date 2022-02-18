@@ -1,6 +1,4 @@
 export default function Home() {
-  const oi = 'a'
-
-  const aosoasokas = 'iajsaij'
+  const as = 'asuhsa'
   return <div>React Avançado</div>
 }
