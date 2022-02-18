@@ -9,11 +9,6 @@
     "lint": "next lint",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "src/**/*": [
-      "yarn lint --fix"
-    ]
-  },
   "dependencies": {
     "next": "12.1.0",
     "react": "17.0.2",
@@ -34,5 +29,11 @@
     "lint-staged": ">=10",
     "prettier": "2.5.1",
     "typescript": "^4.5.5"
+  },
+  "lint-staged": {
+    "*.{js, tsx}": [
+      "yarn lint --fix"
+    ],
+    "*.{js,css,md}": "prettier --write"
   }
 }
