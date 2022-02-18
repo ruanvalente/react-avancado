@@ -8,9 +8,12 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --maxWorkers=50%",
-    "test:watch": "jest --watch --maxWorkers=25%",
-    "postinstall": "husky install",
-    "prepare": "husky install"
+    "test:watch": "jest --watch --maxWorkers=25%"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
     "src/**/*": [
