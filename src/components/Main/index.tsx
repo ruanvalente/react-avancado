@@ -1,7 +1,7 @@
 export function Main() {
   return (
     <main>
-      <h3>React Avançado</h3>
+      <h2>React Avançado</h2>
     </main>
   )
 }
