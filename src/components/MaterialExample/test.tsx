@@ -1,13 +1,13 @@
 import { render, screen } from '@testing-library/react'
 
-import Example from '.'
+import MaterialExample from '.'
 
-describe('<Example />', () => {
+describe('<MaterialExample />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Example />)
+    const { container } = render(<MaterialExample />)
 
     expect(
-      screen.getByRole('heading', { name: /Example/i })
+      screen.getByRole('button', { name: /MaterialExample/i })
     ).toBeInTheDocument()
 
     expect(container.firstChild).toMatchSnapshot()

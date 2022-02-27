@@ -1,5 +1,5 @@
-import Main from 'components/Main'
+import MaterialExample from 'components/MaterialExample'
 
 export default function Home() {
-  return <Main />
+  return <MaterialExample />
 }
